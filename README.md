@@ -45,6 +45,10 @@
 5. **Open your browser**
    Navigate to `http://127.0.0.1:5000` to access the dashboard.
 
+## Screenshot
+<img width="1920" height="1080" alt="Screenshot 2025-08-03 235000" src="https://github.com/user-attachments/assets/d002f899-54d0-41e9-aad8-ae21a580aa4d" />
+
+
 ## Requirements
 
 - Python 3.7+
@@ -56,3 +60,4 @@
 ## License
 
 MIT License
+
