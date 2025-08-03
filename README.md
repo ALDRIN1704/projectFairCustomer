@@ -46,6 +46,9 @@
    Navigate to `http://127.0.0.1:5000` to access the dashboard.
 
 ## Screenshot
+<img width="1920" height="1080" alt="Screenshot 2025-08-03 234708" src="https://github.com/user-attachments/assets/07cf657b-7f48-412d-b2c6-e4af7c252e78" />
+<img width="1920" height="1080" alt="Screenshot 2025-08-03 234819" src="https://github.com/user-attachments/assets/438297e2-bdc2-4446-a564-77ba57ed4242" />
+
 <img width="1920" height="1080" alt="Screenshot 2025-08-03 235000" src="https://github.com/user-attachments/assets/d002f899-54d0-41e9-aad8-ae21a580aa4d" />
 
 
@@ -60,4 +63,5 @@
 ## License
 
 MIT License
+
 
