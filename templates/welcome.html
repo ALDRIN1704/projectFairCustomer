@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .welcome-container {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .welcome-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .welcome-container a {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .welcome-container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h2>Welcome to Customer Risk Portal</h2>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+    </div>
+</body>
+</html>

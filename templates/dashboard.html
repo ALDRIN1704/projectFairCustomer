@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Risk Dashboard</title>
+    <style>
+        body { font-family: Arial; padding: 40px; background-color: #f2f2f2; }
+        h1 { color: #333; }
+        .dataframe { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .dataframe th, .dataframe td { border: 1px solid #999; padding: 8px; text-align: center; }
+        .dataframe th { background-color: #007BFF; color: white; }
+        select, button { padding: 6px 12px; margin: 10px; }
+        .nav { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>📊 Customer Risk Dashboard</h1>
+
+    <div class="nav">
+        <form method="get" action="/">
+            <label>Filter by Risk Level:</label>
+            <select name="risk">
+                <option value="">All</option>
+                {% for level in risk_levels %}
+                    <option value="{{ level }}" {% if level == selected_risk %}selected{% endif %}>{{ level }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Filter</button>
+        </form>
+        <a href="/predict"><button>Go to Prediction Page</button></a>
+    </div>
+
+    <img src="{{ url_for('static', filename='plots/risk_cluster_distribution.png') }}" alt="Cluster Chart" width="500">
+
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+</body>
+</html>
